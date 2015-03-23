@@ -1,7 +1,7 @@
 
-<% if @sales_items %>
-  <% @sales_items.each do |sale_item| %>
-    <h1><%= @sale_item.name %> </h1>
-    <p><%= image_tag attachment_url(@sale_item, :image, :fill, 300, 300) %> </p>
+<% if @sale_items %>
+  <% @sale_items.each do |sale_item| %>
+    <h1><%= sale_item.name %> </h1>
+    <p><%= image_tag attachment_url(sale_item, :image, :fill, 300, 300) %> </p>
   <% end %>
 <% end %> 
