@@ -1,3 +1,3 @@
 class SaleItem < ActiveRecord::Base
-  attachment :item_image
+  attachment :image
 end
