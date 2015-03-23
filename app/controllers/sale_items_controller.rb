@@ -34,6 +34,10 @@ class SaleItemsController < ApplicationController
   end
 
   def destroy
+    @sale_item = set_sale_itme
+    @sale_item.destroy
+
+    redirect_to action: :index
   end
 
 
