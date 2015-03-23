@@ -21,10 +21,21 @@ class SaleItemsController < ApplicationController
   end 
 
   def edit
+     @sale_item = set_sale_itme
   end 
+
+  def update
+    @sale_item = set_sale_itme
+    if @sale_item.update_attributes(sale_item_params)
+      redirect_to sale_item_path(@sale_item)
+    else
+      render 'edit'
+    end
+  end
 
   def destroy
   end
+
 
 private
   def sale_item_params
@@ -32,7 +43,7 @@ private
   end 
 
   def set_sale_itme
-    @sale_item = SaleItem.find(params[:id])
+    sale_item = SaleItem.find(params[:id])
   end
 
 end

@@ -20,16 +20,16 @@
             <span class="icon-bar"></span>
           </button>        
           <div id="brand_box">
-            <p class="brand"> <%= image_tag "computerDar_Comp.png",:class => "logo" %> COMPUTER DAR</p>
-            <a href="#" id="sub_title" class="pull-right">Computer Diagnostics And Repair</a>
+            <%= image_tag "computerDar_Comp.png",:class => "logo" %>
+            <%= link_to 'COMPUTER D.A.R', root_path, :class => 'brand',:id=>"sub_title" %>            
           </div>
         </div>
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Services', services_path %></li>
+            <li><%= link_to 'Products and Sales', sale_items_path %></li>
+            <li><%= link_to 'Contact', contact_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
