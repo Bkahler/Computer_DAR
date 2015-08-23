@@ -15,3 +15,59 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.main_nav{
+  padding-right: 0px;
+  padding-left: 0px;
+  border: solid #2c3e50;
+}
+.body_container{
+  width: 100%;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+#create_sale_item_link{ 
+  margin-top: 30px;
+   }
+
+.banner_body{
+  margin-top: 30px;
+  background-color: #003656;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: solid #2c3e50;
+}
+
+#main_header{
+  margin-top: -43px;
+  text-shadow: 2px 2px black;
+  font-size: 50px;
+  color: white;
+    }
+
+#main_banner{
+    background-image: url("computer-support-banner.jpg");
+    height: 330px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 1485px 390px;
+    background-repeat: no-repeat;
+    background-position: -35px;
+}
+
+
+
+
+
+
+.marketing{
+  margin-top: 100px;
+}
+
+

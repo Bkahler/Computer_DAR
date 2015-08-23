@@ -1,12 +1,25 @@
-<div class="container"> 
-  <% if @sale_items %>
-    <% @sale_items.each do |sale_item| %>
-      <h1><%= sale_item.name %> </h1>
-      <p><%= image_tag attachment_url(sale_item, :image, :fill, 300, 300) %> </p>
-      <% if current_user %>
-        <li><%= link_to 'Edit', edit_sale_item_path(sale_item.id) %></li>
-        <li><%= link_to 'Delete',  { action: :destroy, id: sale_item.id }, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-      <% end %>
+<div class='container general_body'> 
+  <div class='container' id ='create_sale_item_link'> 
+    <% if current_user %>
+      <%= button_to "Create New Sales Item", new_sale_item_path, :class => "btn btn-default", :method => :get %>
     <% end %>
-  <% end %> 
+  </div>
+  <div class="container"> 
+    <% if @sale_items %>
+      <% @sale_items.each do |sale_item| %>
+        <h1><%= sale_item.name %> </h1>
+        <div>
+          <%= image_tag attachment_url(sale_item, :image, :fill, 300, 300) %>
+        </div>
+        <p> Price: $ <%= sale_item.price%></p>
+        <p> Description:<br><%= sale_item.description%></p>
+        <% if current_user %>
+          <li><%= link_to 'Edit', edit_sale_item_path(sale_item.id) %></li>
+          <li><%= link_to 'Delete',  { action: :destroy, id: sale_item.id }, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <% end %>
+      <% end %>
+    <% end %> 
+  </div>
 </div>
+
+
