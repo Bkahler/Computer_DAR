@@ -16,16 +16,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default .navbar-nav > li > a{
+  color: white;
+  font-size: 24px;
+}
+#banner_list{
+  font-size: 30px;
+  color: grey;
+}
 
+#top_container{
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .main_nav{
   padding-right: 0px;
   padding-left: 0px;
   border: solid #2c3e50;
+  background-color: #3939E4;
 }
 .body_container{
   width: 100%;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #create_sale_item_link{ 
   margin-top: 30px;
@@ -42,32 +56,41 @@
   border: solid #2c3e50;
 }
 
-#main_header{
+#headline{
   margin-top: -43px;
   text-shadow: 2px 2px black;
-  font-size: 50px;
+  font-size: 55px;
   color: white;
     }
 
 #main_banner{
-    background-image: url("computer-support-banner.jpg");
     height: 330px;
     width: 100%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-size: 1485px 390px;
+/*    background-size: 1485px 390px;
     background-repeat: no-repeat;
-    background-position: -35px;
+    background-position: -35px;*/
+    padding-right: 10px;
+    padding-top: 49px;
+    padding-left: 10px;
 }
-
-
-
-
-
 
 .marketing{
   margin-top: 100px;
 }
+
+.banner_logo{
+  width: 525px;
+  height: 370px;
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  left: 0;
+  right: -140px;
+  bottom: 0;
+}
+
 
 
