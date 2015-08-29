@@ -63,34 +63,151 @@
   color: white;
     }
 
-#main_banner{
-    height: 330px;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-/*    background-size: 1485px 390px;
-    background-repeat: no-repeat;
-    background-position: -35px;*/
-    padding-right: 10px;
-    padding-top: 49px;
-    padding-left: 10px;
+@media(max-width:767px){
+    .navbar-default .navbar-nav > li > a{
+      color: white;
+      font-size: 24px;
+    }
+
+    .navbar-header{
+     padding-left: 15px;
+    }
+
+    #main_banner{
+      height: 375px;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10px;
+      padding-top: 49px;
+      padding-left: 10px;
+  }
+  .banner_logo {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+    top: -270px;
+    left: 0;
+    right: -329px;
+    bottom: 0;
+  }
+
 }
+@media(min-width:768px){
+    .navbar-default .navbar-nav > li > a{
+      color: white;
+      font-size: 24px;
+    };
+
+    #nav-links{
+      margin-left: 50px;
+      margin-right: 120px;
+      width: 600px;
+    };
+
+    #main_banner{
+      height: 340px;
+      width: 100%;
+      margin-top: 58px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10px;
+      padding-top: 49px;
+      padding-left: 10px;
+    };
+
+    #banner_list {
+      font-size: 26px;
+      color: grey;
+    };
+
+    #headline {
+      margin-top: -43px;
+      text-shadow: 2px 2px black;
+      font-size: 45px;
+      color: white;
+    };
+
+    .banner_logo{
+      width: 420px;
+      height: 320px;
+      position: absolute;
+      margin: auto;
+      top: 274px;
+      left: 0;
+      right: -90px;
+      bottom: 0;
+    };
+
+}
+@media(min-width:992px){
+    .navbar-default .navbar-nav > li > a{
+      color: white;
+      font-size: 24px;
+    }
+    #nav-links{
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%
+    };
+    #main_banner{
+      height: 330px;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10px;
+      padding-top: 49px;
+      padding-left: 10px;
+  };
+  .banner_logo{
+    width: 525px;
+    height: 370px;
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    left: 0;
+    right: -140px;
+    bottom: 0;
+  };
+}
+
+@media(min-width:1200px){
+  .navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 24px;
+  }
+  #main_banner{
+      height: 330px;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10px;
+      padding-top: 49px;
+      padding-left: 10px;
+  };
+
+  .banner_logo{
+    width: 525px;
+    height: 370px;
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    left: 0;
+    right: -140px;
+    bottom: 0;
+  };
+}
+
 
 .marketing{
   margin-top: 100px;
 }
 
-.banner_logo{
-  width: 525px;
-  height: 370px;
-  position: absolute;
-  margin: auto;
-  top: 200px;
-  left: 0;
-  right: -140px;
-  bottom: 0;
-}
+
 
 
 
