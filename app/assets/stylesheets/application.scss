@@ -15,11 +15,30 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.general_body{
+  margin-top: 72px;
+}
+
+#sub-container{ 
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.brand{
+    font-size: 25px;
+    color: white;  
+    font-family: 'Orbitron'
+}
+
+#main_banner{
+          background-color: #CFCFCF;
+        }
 
 .navbar-default .navbar-nav > li > a{
   color: white;
   font-size: 24px;
 }
+
 #banner_list{
   font-size: 30px;
   color: grey;
@@ -61,9 +80,12 @@
   text-shadow: 2px 2px black;
   font-size: 55px;
   color: white;
-    }
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
 
 @media(max-width:767px){
+
     .navbar-default .navbar-nav > li > a{
       color: white;
       font-size: 24px;
@@ -74,9 +96,9 @@
     }
 
     #main_banner{
-      height: 375px;
+      height: 405px;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 72px;
       margin-left: auto;
       margin-right: auto;
       padding-right: 10px;
@@ -96,6 +118,9 @@
 
 }
 @media(min-width:768px){
+    .general_body{
+      margin-top: 122px;
+    }
     .navbar-default .navbar-nav > li > a{
       color: white;
       font-size: 24px;
@@ -108,9 +133,9 @@
     };
 
     #main_banner{
-      height: 340px;
+      height: 345px;
       width: 100%;
-      margin-top: 58px;
+      margin-top: 122px;
       margin-left: auto;
       margin-right: auto;
       padding-right: 10px;
@@ -126,7 +151,7 @@
     #headline {
       margin-top: -43px;
       text-shadow: 2px 2px black;
-      font-size: 45px;
+      font-size: 40px;
       color: white;
     };
 
@@ -155,7 +180,7 @@
     #main_banner{
       height: 330px;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 72px;
       margin-left: auto;
       margin-right: auto;
       padding-right: 10px;
@@ -167,7 +192,7 @@
     height: 370px;
     position: absolute;
     margin: auto;
-    top: 200px;
+    top: 230px;
     left: 0;
     right: -140px;
     bottom: 0;
@@ -182,7 +207,7 @@
   #main_banner{
       height: 330px;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 72px;
       margin-left: auto;
       margin-right: auto;
       padding-right: 10px;
@@ -195,7 +220,7 @@
     height: 370px;
     position: absolute;
     margin: auto;
-    top: 200px;
+    top: 230px;
     left: 0;
     right: -140px;
     bottom: 0;
@@ -205,6 +230,11 @@
 
 .marketing{
   margin-top: 100px;
+}
+
+.sale-item-box{
+  padding: 12px 12px;
+  border: solid black;
 }
 
 

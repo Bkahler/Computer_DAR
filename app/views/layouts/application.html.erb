@@ -3,13 +3,12 @@
 <head>
   <title>ComputerDar</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class= "container body_container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid main_nav">
         <div class="navbar-header">
@@ -30,9 +29,6 @@
             <li><%= link_to 'Services', services_path %></li>
             <li><%= link_to 'Products and Sales', sale_items_path %></li>
             <li><%= link_to 'Contact', contact_path %></li>
-            <% if current_user %>
-              <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
-            <% end %>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
