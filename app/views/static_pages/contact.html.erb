@@ -1,3 +1,10 @@
 <div class='container general_body'> 
   <h1> CONTACT PAGE </h1>
+  <footer>
+  <hr>
+    <p>© ComputerDar 2015</p>
+    <% if current_user %>
+      <p><%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+    <% end %>
+  </footer>
 </div>

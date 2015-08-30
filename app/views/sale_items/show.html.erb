@@ -1,5 +1,11 @@
 <div class="container general_body"> 
   <h1><%= @sale_item.name %> </h1>
-  <p><%= image_tag attachment_url(@sale_item, :image, :fill, 300, 300) %>
-  </p>
+  <p><%= image_tag attachment_url(@sale_item, :image, :fill, 300, 300) %></p>
+  <footer>
+    <hr>
+    <p>© ComputerDar 2015</p>
+    <% if current_user %>
+      <p><%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+    <% end %>
+  </footer>
 </div>

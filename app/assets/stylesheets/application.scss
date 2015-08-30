@@ -118,74 +118,76 @@
 
 }
 @media(min-width:768px){
-    .general_body{
-      margin-top: 122px;
-    }
-    .navbar-default .navbar-nav > li > a{
-      color: white;
-      font-size: 24px;
-    };
+  .general_body{
+    margin-top: 122px;
+  }
+  .navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 24px;
+  };
 
-    #nav-links{
-      margin-left: 50px;
-      margin-right: 120px;
-      width: 600px;
-    };
+  #nav-links{
+    margin-left: 50px;
+    margin-right: 120px;
+    width: 600px;
+  };
 
-    #main_banner{
-      height: 345px;
-      width: 100%;
-      margin-top: 122px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-right: 10px;
-      padding-top: 49px;
-      padding-left: 10px;
-    };
+  #main_banner{
+    height: 345px;
+    width: 100%;
+    margin-top: 122px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-top: 49px;
+    padding-left: 10px;
+  };
 
-    #banner_list {
-      font-size: 26px;
-      color: grey;
-    };
+  #banner_list {
+    font-size: 26px;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    color: grey;
+  };
 
-    #headline {
-      margin-top: -43px;
-      text-shadow: 2px 2px black;
-      font-size: 40px;
-      color: white;
-    };
+  #headline {
+    margin-top: -43px;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    color: white;
+  };
 
-    .banner_logo{
-      width: 420px;
-      height: 320px;
-      position: absolute;
-      margin: auto;
-      top: 274px;
-      left: 0;
-      right: -90px;
-      bottom: 0;
-    };
+  .banner_logo{
+    width: 420px;
+    height: 320px;
+    position: absolute;
+    margin: auto;
+    top: 274px;
+    left: 0;
+    right: -90px;
+    bottom: 0;
+  };
 
 }
 @media(min-width:992px){
-    .navbar-default .navbar-nav > li > a{
-      color: white;
-      font-size: 24px;
-    }
-    #nav-links{
-      margin-left: 0px;
-      margin-right: 0px;
-      width: 100%
-    };
-    #main_banner{
-      height: 330px;
-      width: 100%;
-      margin-top: 72px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-right: 10px;
-      padding-top: 49px;
-      padding-left: 10px;
+  .navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 24px;
+  }
+  #nav-links{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%
+  };
+  #main_banner{
+    height: 330px;
+    width: 100%;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-top: 49px;
+    padding-left: 10px;
   };
   .banner_logo{
     width: 525px;
@@ -236,7 +238,6 @@
   padding: 12px 12px;
   border: solid black;
 }
-
 
 
 
